@@ -273,7 +273,7 @@
               <script>
                 $(document).ready(function () {
                   $.get('database/members/exec_body.json', (data, status) => {
-              
+              console.log(data);
                     data.forEach(member => {
                       $("#memberslist").append(`<div class="col-lg-4 col-md-6">
             <div class="member">
@@ -281,14 +281,27 @@
               <h4>${member.name}</h4>
               <span>${member.current_club_position}</span>
               <div class="social">
-                <div class="social">
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href="https://www.facebook.com/vishalgorai.dev"><i class="fa fa-facebook"></i></a>
-                  <a href="https://www.linkedin.com/in/greyhatlinux"><i class="fa fa-linkedin"></i></a>
+                <div class="social" id="social_link_${member.rank}">
+                
+                
                 </div>
               </div>
             </div>
           </div>`)
+          if (member.instagram) {
+            $(`#social_link_${member.rank}`).append(`  <a href="${member.instagram}"><i class="fa fa-instagram"></i></a>`);
+          }
+          if (member.facebook) {
+            $(`#social_link_${member.rank}`).append(`  <a href="${member.facebook}"><i class="fa fa-facebook"></i></a>`);
+          }
+          if (member.linkdin) {
+            $(`#social_link_${member.rank}`).append(`  <a href="${member.linkdin}"><i class="fa fa-linkedin"></i></a>`);
+          }
+          
+          if (member.twitter) {
+            $(`#social_link_${member.rank}`).append(`  <a href="${member.twitter}"><i class="fa fa-twitter"></i></a>`);
+          }
+         
                     });
                   })
                 });

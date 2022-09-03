@@ -519,6 +519,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about {
 	background: #fff;
 	padding: 80px 0;
+	
+}
+
+#about .about-container{
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	padding: 5px;
 }
 
 #about .about-container .background {
@@ -530,6 +536,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #about .about-container .content {
 	background: #fff;
+	
 }
 
 #about .about-container .title {
@@ -620,6 +627,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 #facts {
 	background: #f7f7f7;
 	padding: 80px 0 60px 0;
+}
+#facts .container{
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	padding: 20px;
 }
 
 #facts .counters span {
@@ -910,7 +921,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #team .member {
 	text-align: center;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	padding: 20px;
+	border-radius: 10px;
 }
 
 #team .member .pic {
@@ -920,7 +934,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #team .member .pic img {
-	max-width: 100%;
+	max-height: 100%;
 }
 #team .member .pic-poster img {
 	max-width: 22%;
@@ -997,6 +1011,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 	width: 100%;
 	background: #f7f7f7;
 	padding: 80px 0 40px 0;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 #contact #google-map {
