@@ -273,7 +273,7 @@
               <script>
                 $(document).ready(function () {
                   $.get('database/members/exec_body.json', (data, status) => {
-                    console.log(data);
+              
                     data.forEach(member => {
                       $("#memberslist").append(`<div class="col-lg-4 col-md-6">
             <div class="member">
